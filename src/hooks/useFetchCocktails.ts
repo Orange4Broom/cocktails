@@ -1,7 +1,7 @@
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
 import { endpoints } from '@/endpoints';
+import { useQuery } from '@tanstack/react-query';
 import { AlcoholicAndNonAlcoholicProps } from '@typings/endpointTypes/endpoints';
+import axios from 'axios';
 
 const fetchAlcoholicAndNonAlcoholicCocktails = async (isAlcoholic: AlcoholicAndNonAlcoholicProps) => {
   const response = await axios.get(endpoints.getAlcoholicAndNonAlcoholicCocktails(isAlcoholic));

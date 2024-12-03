@@ -1,11 +1,8 @@
+import { useSearch } from '@/context/SearchContext';
 import { FC } from 'react';
 
-interface NavigationSearchProps {
-  searchedValue: string;
-  setSearchedValue: (value: string) => void;
-}
-
-export const NavigationSearch: FC<NavigationSearchProps> = ({ setSearchedValue, searchedValue }) => {
+export const NavigationSearch: FC = () => {
+  const { searchedValue, setSearchedValue } = useSearch();
   return (
     <>
       <input

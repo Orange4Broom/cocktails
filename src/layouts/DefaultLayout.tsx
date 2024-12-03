@@ -3,14 +3,12 @@ import { FC, ReactNode } from 'react';
 
 interface DefaultLayoutProps {
   children: ReactNode;
-  searchedValue: string;
-  setSearchedValue: (value: string) => void;
 }
 
-export const DefaultLayout: FC<DefaultLayoutProps> = ({ children, searchedValue, setSearchedValue }) => {
+export const DefaultLayout: FC<DefaultLayoutProps> = ({ children }) => {
   return (
     <>
-      <Navigation searchedValue={searchedValue} setSearchedValue={setSearchedValue} />
+      <Navigation />
       {children}
     </>
   );
