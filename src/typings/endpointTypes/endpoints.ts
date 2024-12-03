@@ -1,3 +1,3 @@
 export interface AlcoholicAndNonAlcoholicProps {
-    isAlcoholic: boolean;
+  isAlcoholic: boolean;
 }
