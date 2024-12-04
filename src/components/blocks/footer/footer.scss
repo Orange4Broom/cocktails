@@ -1,0 +1,21 @@
+@use '@styles/colors' as *;
+@use '@styles/variables' as *;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid $footer-border;
+
+  &__text, &__link {
+    color: $footer-text;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

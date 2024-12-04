@@ -3,19 +3,23 @@
 
 .navigation {
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 20px;
   width: 100%;
-  /* background: $navigation-background; */
+  background: $navigation-background;
+  border-bottom: 1px solid $navigation-border;
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-    width: 700px;
+    max-width: 800px;
+    width: 100%;
   }
 
   &__alcoholic, &__submit {
@@ -23,9 +27,11 @@
     justify-content: center;
     align-items: center;
     padding: 8px 20px;
-    border: 1px solid white;
+    border: 1px solid $button-border;
     border-radius: $border-radius;
+    font-weight: 600;
     font-size: 12px;
+    color: $button-text;
     background: none;
   }
 
@@ -38,8 +44,12 @@
     border: none;
     border-radius: $border-radius;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     color: $searchfield-text;
     background: $searchfiled-background;
+
+    &::placeholder {
+      color: $placeholder-text;
+    }
   }
 }
