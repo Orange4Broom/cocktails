@@ -12,6 +12,7 @@
   width: 100%;
   background: $navigation-background;
   border-bottom: 1px solid $navigation-border;
+  z-index: 4;
 
   &__content {
     display: flex;
